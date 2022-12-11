@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --ff-fraunces: 'Fraunces', serif;               /* Font Families */
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    --clr-dark-cyan: hsl(158, 36%, 37%);         /* Primary Colors */
+    --clr-cream: hsl(30, 38%, 92%);
+
+    --clr-dark-blue: hsl(212, 21%, 14%);        /* Secondary Colors */
+    --clr-dark-gray-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--clr-cream);
+}
+
+.perfume-img {
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.container {
+    width: 27rem;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-white);
+    border-radius: 0.8rem;
+}
+
+article {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    width: 85%;
+}
+
+
+h1, h2 {
+    font-family: var(--ff-fraunces);
+    font-weight: 700;
+}
+
+h3, p {
+    font-family: var(--ff-montserrat);
+    color: var(--clr-dark-gray-blue);
+}
+
+h3 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin: 0.2rem auto;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+}
+
+p:hover {
+    font-size: 0.9rem;
+}
+
+h2 {
+    color: var(--clr-dark-cyan);
+    font-size: 2.3rem;
+}
+
+h2 span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: var(--clr-dark-gray-blue);
+    text-decoration: line-through;
+}
+
+button {
+    height: 3.7rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: var(--clr-dark-cyan);
+    font-weight: 700;
+    font-family: var(--ff-montserrat);
+    font-size: 1rem;
+    color: var(--clr-white);
+    align-self: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+#cart {
+    margin-right: 0.5rem;
+}
+
+
+button:hover {
+    background-color: var(--clr-dark-blue);
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin: 20vh auto;
+        flex-direction: row;
+        width: 42rem;
+    }
+
+    .perfume-img {
+        height: 100%;
+        border-radius: 0.8rem 0 0 0.8rem;
+    }
+
+  }
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
